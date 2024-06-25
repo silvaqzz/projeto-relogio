@@ -1,0 +1,71 @@
+@font-face {
+    font-family: fonte;
+    src: url('../fonts/MINECRAFT\ PE.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fonte;
+}
+
+h1 {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    background: linear-gradient(#ffa1ef42, #d400ff42), url(../css/sla\ porra.gif);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.relogio {
+    background: transparent;
+    width: 90%;
+    padding: 3% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 5px 10px #000;
+    border-radius: 5px;
+}
+
+.relogio div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    box-shadow: 1px 4px 6px;
+    margin: 3%;
+    padding: 2%;
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+}
+
+.relogio span.tempo{
+    font-size: 1rem;
+}
+
+@media(max-width: 760px) {
+    h1 {
+        top: 5%;
+        font-size: 1.5rem;
+    }
+
+    .relogio{
+        flex-direction: column;
+        width: 50%;
+    }
+}
